@@ -18,7 +18,8 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </div>
           <a href="tel:9542105008" className="nav-cta">
-            📞 (954) 210-5008
+            <span className="cta-full">📞 (954) 210-5008</span>
+            <span className="cta-short">📞 Call</span>
           </a>
         </div>
       </nav>
@@ -303,6 +304,10 @@ export default function Home() {
 
         .nav-cta:hover {
           background: #0284c7;
+        }
+
+        .cta-short {
+          display: none;
         }
 
         /* Hero Section */
@@ -719,6 +724,14 @@ export default function Home() {
             padding: 0.5rem 0.75rem;
             font-size: 0.85rem;
             white-space: nowrap;
+          }
+
+          .cta-full {
+            display: none;
+          }
+
+          .cta-short {
+            display: inline;
           }
 
           .hero {
